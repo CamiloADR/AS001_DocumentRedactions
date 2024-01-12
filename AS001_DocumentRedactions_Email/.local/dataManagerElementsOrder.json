@@ -1,0 +1,207 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "vDtbDispatcher&Sequence_17",
+        "vBooShouldStop&Sequence_25",
+        "gStrFormats&StateMachine_1",
+        "gStrLogs&StateMachine_1",
+        "gStrInputs&StateMachine_1",
+        "gStrBase&StateMachine_1",
+        "gStrTraceability&StateMachine_1",
+        "gIntConsecutiveSystemExceptions&StateMachine_1",
+        "gDtbTransactionData&StateMachine_1",
+        "gIntRetryNumber&StateMachine_1",
+        "gBRExcBusinessException&StateMachine_1",
+        "gExcSystemException&StateMachine_1",
+        "gQitmTransactionItem&StateMachine_1",
+        "gDicConfig&StateMachine_1",
+        "gIntTransactionNumber&StateMachine_1",
+        "gStrProjectName&StateMachine_1",
+        "TransactionID&StateMachine_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Dispatcher.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_DtbDispatcher"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_DicConfig",
+        "in_ArrConfigSheets",
+        "in_StrConfigFile"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_DicConfig"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_IntTransactionNumber",
+        "in_DicConfig",
+        "out_DtbTransactionData",
+        "out_QitmTransactionItem",
+        "out_StrTransactionID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CreateTraceabilityFolders.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_StrLogs",
+        "in_StrTraceability"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_IntConsecutiveSystemExceptions",
+        "io_IntTransactionNumber",
+        "io_IntRetryNumber",
+        "in_ExcSystemException",
+        "in_DicConfig",
+        "in_BRException",
+        "in_QitmTransactionItem",
+        "in_StrTraceability",
+        "in_TransactionID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/TakeScreenshot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Screenshot&Sequence_1",
+        "ScreenshotFileInfo&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Folder",
+        "io_FilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/RetryCurrentTransaction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "in_SystemException",
+        "in_QueueRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "vStrPDFName&Sequence_1",
+        "vBooValid&Sequence_1",
+        "vStrValid&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_DtbTransactionData",
+        "in_DicConfig",
+        "in_QitmTransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "getEmailContent.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "vStrPDFPath&Sequence_1",
+        "vStrExcelPath&Sequence_6",
+        "vtempStrDTB&Sequence_3",
+        "vStrName&Sequence_17",
+        "vListAttachments&Sequence_8",
+        "vDicpareOldNewFileName&Sequence_2",
+        "vLisEmails&Sequence_3",
+        "vBoolExcelPath&Sequence_6",
+        "vBoolPDFPath&Sequence_6",
+        "vBoolValid&Sequence_6",
+        "vArrFilesFromDevice&Sequence_8",
+        "vOffMessFilesFromDevice&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_StrDownloadPath",
+        "out_DtbDispatcher"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
